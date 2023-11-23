@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <script src="app.js"></script>
+  <title>Frontend Mentor | Age calculator app</title>
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400;1,700;1,800&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="background-container">
+    <div class="calculator-body-container">
+
+      <div class="input-fuld-container">
+        <div class="input-box-1">
+          <label for="name">Day</label><br>
+          <input type="text" placeholder="DD" id="date" maxlength="2" size="2"><br>
+          <small id="error"></small>
+        </div>
+        <div class="input-box-2">
+          <label for="name">Month</label><br>
+          <input type="text" placeholder="MM" id="month" maxlength="2" size="2"><br>
+          <small id="error2"></small>
+        </div>
+        <div class="input-box-3">
+          <label for="name">Year</label><br>
+          <input type="text" placeholder="YYYY" id="year" maxlength="4" size="4"><br>
+          <small id="error3"></small>
+        </div>
+
+      </div>
+      <div class="button-continer">
+        <div class="horizontal-container"><hr></div>
+        <div class="main-btn-continer">
+        <button type="button" id="result-btn"><img src="icon-arrow.svg" alt=""></button>
+     </div>
+    </div>
+
+    <div class="result-continer">
+      <div class="resut-dd">
+        <p class="r-dd">--</p><p class="result-info-text">Day</p>
+      </div>
+      <div class="resut-mm">
+        <p class="r-mm">--</p><p class="result-info-text">Month</p>
+      </div>
+      <div class="resut-yy">
+        <p class="r-yy">--</p><p class="result-info-text">Year</p>
+      </div>
+     </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
