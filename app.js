@@ -20,6 +20,7 @@ window.onload = ()=>{
     input_date.addEventListener("input", e =>{
         if(+input_date.value > 31 ){
             error.innerHTML = "*place input valid date";
+            input_date.style.borderColor = "red";
             isvalid = false;
             return;
         }
@@ -30,6 +31,7 @@ window.onload = ()=>{
         if(+input_date.value === 0){
             isvalid = false;
             error.innerHTML = "input your date";
+            input_date.style.borderColor = "red";
             isvalid = false;
             return;
         }
@@ -41,6 +43,7 @@ window.onload = ()=>{
     input_month.addEventListener("input", e =>{
         if(+input_month.value > 12 ){
             error2.innerHTML = "*place input valid month";
+            input_month.style.borderColor = "red";
             isvalid = false;
             return;
         }
@@ -51,6 +54,7 @@ window.onload = ()=>{
         if(+input_month.value === 0){
             isvalid = false;
             error2.innerHTML = "input your month";
+            input_month.style.borderColor = "red";
             isvalid = false;
             return;
         }
@@ -63,6 +67,7 @@ window.onload = ()=>{
     input_year.addEventListener("input", e =>{
         if(+input_year.value > 2023 ){
             error3.innerHTML = "*place input valid year";
+            input_year.style.borderColor = "red";
             isvalid = false;
             return;
         }
@@ -73,6 +78,7 @@ window.onload = ()=>{
         if(+input_year.value === 0){
             isvalid = false;
             error3.innerHTML = "input your year";
+            input_year.style.borderColor = "red";
             isvalid = false;
             return;
         }
@@ -97,7 +103,7 @@ window.onload = ()=>{
        output_yy.textContent = age_year;
     }
     else{
-      alert("কিগো কিছুইতো পুরন করলানা"); 
+      alert("কিগো কিছুইতো পুরন করলানা");
     }
    }    
 
